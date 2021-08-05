@@ -1,26 +1,26 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { loginWithEmailAndPassword, startGoogleLogin } from '../../actions/auth';
 import { useForm } from '../../hooks/useForm';
 
 export const LoginScreen = () => {
   const dispatch = useDispatch();
+  const { loading } = useSelector(state => state.ui);
   const [formsValues, handleInputChange] = useForm({
     email: 'deymerh@hotmail.com',
-    password: 'axn5s1m8'
+    password: '123456'
   });
   const { email, password } = formsValues;
   const handleLogin = (e) => {
     e.preventDefault();
     dispatch(loginWithEmailAndPassword(email, password));
-    console.log(email, password);
   };
   const handleGoogleLogin = () => {
     dispatch(startGoogleLogin());
   }
   return (
-    <>
+    <div>
       <h1 className="auth__title">Login</h1>
       <form onSubmit={handleLogin}>
         <input
@@ -43,9 +43,11 @@ export const LoginScreen = () => {
         />
         <button
           type="submit"
-          className="btn btn-primary btn-block">
+          className="btn btn-primary btn-block"
+          disabled={loading}
+        >
           Login
-          </button>
+        </button>
         <hr />
         <div className="auth__social-netwoeks">
           <p>Login with social network</p>
@@ -70,8 +72,8 @@ export const LoginScreen = () => {
           to="/auth/register"
         >
           Create new account
-          </Link>
+        </Link>
       </form>
-    </>
+    </div>
   );
 };
