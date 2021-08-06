@@ -1,7 +1,14 @@
-import React from 'react'
-import { JournalEntries } from './JournalEntries'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { JournalEntries } from './JournalEntries';
+import { startLogout } from '../../actions/auth';
 
 export const Sidebar = () => {
+  const dispatch = useDispatch();
+  const handleLogout = ()=>{
+    dispatch( startLogout() );
+    console.log('Click fuera!')
+  };
   return (
     <aside className="journal__sidebar">
       <div className="jounal__sidebar-navbar">
@@ -9,7 +16,10 @@ export const Sidebar = () => {
           <i className="fas fa-moon"></i>
           <span> Deymer!</span>
         </h3>
-        <button className="btn">
+        <button
+          className="btn"
+          onClick={handleLogout} 
+          >
           Logout
         </button>
       </div>
