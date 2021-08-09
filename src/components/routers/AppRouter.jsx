@@ -9,11 +9,12 @@ import { PrivateRoute } from './PrivateRoutes';
 import { PublicteRoute } from './PublicRoutes';
 
 import { useDispatch } from 'react-redux';
-import { firebase } from '../../firebase/firebase-config';
+import {firebase} from '../../firebase/firebase-config';
 
-import { AuthRouter } from './AuthRouter';
+import {AuthRouter} from './AuthRouter';
 import { login } from '../../actions/auth';
-import { JournalScreen } from '../journal/JournalScreen';
+import {JournalScreen} from '../journal/JournalScreen';
+import {startLoadingNotes} from '../../actions/notes';
 
 export const AppRouter = () => {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ export const AppRouter = () => {
       if (user?.uid) {
         dispatch(login(user.uid, user.displayName));
         setIsLoggedIn(true);
+        dispatch(startLoadingNotes(user.uid));
       }
       setChecking(false);
     })

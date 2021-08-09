@@ -5,9 +5,8 @@
   background-color: $dark-grey;
   color: white;
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  height: 100%;
-  max-height: 100vh;
   padding-left: 10px;
   padding-right: 10px;
   width: 450px;
@@ -35,7 +34,6 @@
 .journal__entries{
   flex: 1 1 auto;
   margin-top: 30px;
-  overflow: scroll;
 }
 .journal__entry{
   background-color: white;
@@ -43,7 +41,6 @@
   color: $dark-grey;
   display: flex;
   margin-bottom: 10px;
-  overflow: scroll;
 }
 .journal__entry-picture{
   height: 75px;
