@@ -48,8 +48,12 @@ export const startLogout = ()=>{
   return async (dispatch)=>{
     await firebase.auth().signOut();
     dispatch(logout());
+    dispatch(resetNotes());
   }
 }
 export const logout = ()=>({
   type: types.logout
-})
+});
+export const resetNotes = ()=>({
+  type: types.notesLogoutCleaning
+});

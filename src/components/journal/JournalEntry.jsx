@@ -10,7 +10,7 @@ export const JournalEntry = ({id, date, title, body, url}) => {
     dispatch(activeNote(id, {date, title, body, url}));
   };
   return (
-    <div className="journal__entry"
+    <div className="journal__entry animate__animated animate__fadeIn animated__fater"
       onClick={handleActivatedNote}      
     >
       {

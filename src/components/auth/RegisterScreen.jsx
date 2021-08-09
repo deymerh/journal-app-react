@@ -15,26 +15,20 @@ export const RegisterScreen = () => {
     password: "123456",
     password2: "123456",
   });
-  const {
-    name,
-    email,
-    password,
-    password2
-  } = formsValues;
   const handleRegister = (e) => {
     e.preventDefault();
     if (isForm()) {
-      dispatch(registerWithEmailPasswordName(email, password, name))
+      dispatch(registerWithEmailPasswordName(formsValues.email, formsValues.password, formsValues.name));
     }
   };
   const isForm = () => {
-    if (name.trim().length === 0) {
+    if (formsValues.name.trim().length === 0) {
       dispatch(setErrorAction('Name is required'));
       return false;
-    } else if (!validator.isEmail(email)) {
+    } else if (!validator.isEmail(formsValues.email)) {
       dispatch(setErrorAction('Email is required'));
       return false;
-    } else if (password !== password2 || password.length < 5) {
+    } else if (formsValues.password !== formsValues.password2 || formsValues.password.length < 5) {
       dispatch(setErrorAction('Password should be at least 6 characters and match each other'));
       return false;
     }
@@ -42,14 +36,12 @@ export const RegisterScreen = () => {
     return true;
   };
   return (
-    <div>
+    <div className="animate__animated animate__fadeIn animated__fater">
       <h1 className="auth__title">Register</h1>
       <form onSubmit={handleRegister}>
         {
-          msgError &&
-          (
+          (msgError) &&
             <div className="auth__alert-error">{msgError}</div>
-          )
         }
         <input
           autoComplete="off"
@@ -58,7 +50,7 @@ export const RegisterScreen = () => {
           onChange={handleInputChange}
           placeholder="Nombre"
           type="text"
-          value={name}
+          value={formsValues.name}
         />
         <input
           autoComplete="off"
@@ -67,7 +59,7 @@ export const RegisterScreen = () => {
           onChange={handleInputChange}
           placeholder="Email"
           type="email"
-          value={email}
+          value={formsValues.email}
         />
         <input
           autoComplete="off"
@@ -76,7 +68,7 @@ export const RegisterScreen = () => {
           onChange={handleInputChange}
           placeholder="Password"
           type="password"
-          value={password}
+          value={formsValues.password}
         />
         <input
           autoComplete="off"
@@ -85,7 +77,7 @@ export const RegisterScreen = () => {
           onChange={handleInputChange}
           placeholder="Confirm"
           type="password"
-          value={password2}
+          value={formsValues.password2}
         />
         <button
           className="btn btn-primary btn-block mb-5"

@@ -11,7 +11,6 @@ export const NotesAppBar = () => {
   }
   const handleUploadPicture = () => {
     inputFileImg.current.click();
-    console.log('Click');
   };
   const handleFileChange = (e)=>{
     const image = e.target.files[0];

@@ -22,7 +22,10 @@ export const LoginScreen = () => {
   return (
     <div>
       <h1 className="auth__title">Login</h1>
-      <form onSubmit={handleLogin}>
+      <form
+        onSubmit={handleLogin}
+        className="animate__animated animate__fadeIn animated__fater"
+      >
         <input
           autoComplete="off"
           className="auth__input"
