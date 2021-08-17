@@ -11,9 +11,9 @@ export const fileUpload = async (image)=>{
     if (res.ok) {
       return await res.json();
     }else{
-      return res.json();
+      return null;
     }
   } catch (error) {
-    throw new Error('Error!')
+    throw new Error('Error!');
   }
 };
