@@ -8,8 +8,8 @@ export const LoginScreen = () => {
   const dispatch = useDispatch();
   const { loading } = useSelector(state => state.ui);
   const [formsValues, handleInputChange] = useForm({
-    email: 'deymerh@hotmail.com',
-    password: '123456'
+    email: '',
+    password: ''
   });
   const { email, password } = formsValues;
   const handleLogin = (e) => {
@@ -48,6 +48,7 @@ export const LoginScreen = () => {
           type="submit"
           className="btn btn-primary btn-block"
           disabled={loading}
+          data-testid="btnLogin"
         >
           Login
         </button>
@@ -57,6 +58,7 @@ export const LoginScreen = () => {
           <div
             onClick={handleGoogleLogin}
             className="google-btn"
+            data-testid="withGoogle"
           >
             <div className="google-icon-wrapper">
               <img

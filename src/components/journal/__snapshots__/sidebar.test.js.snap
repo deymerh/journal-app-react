@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <Sidebar /> debe hacer el snapshot del componente 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <aside
+        class="journal__sidebar"
+      >
+        <div
+          class="jounal__sidebar-navbar"
+        >
+          <h3
+            class="mt-5"
+          >
+            <i
+              class="fas fa-moon"
+            />
+            <span>
+              !
+            </span>
+          </h3>
+          <button
+            class="btn"
+            data-testid="btnLogout"
+          >
+            Logout
+          </button>
+        </div>
+        <div
+          class="jounal__new-entry"
+        >
+          <i
+            class="far fa-calendar-plus fa-5x"
+            data-testid="newEntry"
+          />
+          <p
+            class="mt-5"
+          >
+            New Entry
+          </p>
+        </div>
+        <div
+          class="journal__entries pointer"
+        />
+      </aside>
+    </div>
+  </body>,
+  "container": <div>
+    <aside
+      class="journal__sidebar"
+    >
+      <div
+        class="jounal__sidebar-navbar"
+      >
+        <h3
+          class="mt-5"
+        >
+          <i
+            class="fas fa-moon"
+          />
+          <span>
+            !
+          </span>
+        </h3>
+        <button
+          class="btn"
+          data-testid="btnLogout"
+        >
+          Logout
+        </button>
+      </div>
+      <div
+        class="jounal__new-entry"
+      >
+        <i
+          class="far fa-calendar-plus fa-5x"
+          data-testid="newEntry"
+        />
+        <p
+          class="mt-5"
+        >
+          New Entry
+        </p>
+      </div>
+      <div
+        class="journal__entries pointer"
+      />
+    </aside>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

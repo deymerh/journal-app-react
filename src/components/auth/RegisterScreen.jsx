@@ -10,10 +10,10 @@ export const RegisterScreen = () => {
   const dispatch = useDispatch();
   const { msgError } = useSelector(state => state.ui);
   const [formsValues, handleInputChange] = useForm({
-    name: 'Deymer',
-    email: 'deymerh@hotmail.com',
-    password: "123456",
-    password2: "123456",
+    name: '',
+    email: '',
+    password: "",
+    password2: "",
   });
   const handleRegister = (e) => {
     e.preventDefault();
@@ -41,7 +41,7 @@ export const RegisterScreen = () => {
       <form onSubmit={handleRegister}>
         {
           (msgError) &&
-            <div className="auth__alert-error">{msgError}</div>
+            <span className="auth__alert-error" data-testid="msgError">{msgError}</span>
         }
         <input
           autoComplete="off"
@@ -51,6 +51,7 @@ export const RegisterScreen = () => {
           placeholder="Nombre"
           type="text"
           value={formsValues.name}
+          data-testid="name"
         />
         <input
           autoComplete="off"
@@ -60,6 +61,7 @@ export const RegisterScreen = () => {
           placeholder="Email"
           type="email"
           value={formsValues.email}
+          data-testid="email"
         />
         <input
           autoComplete="off"
@@ -69,6 +71,7 @@ export const RegisterScreen = () => {
           placeholder="Password"
           type="password"
           value={formsValues.password}
+          data-testid="password"
         />
         <input
           autoComplete="off"
@@ -78,12 +81,14 @@ export const RegisterScreen = () => {
           placeholder="Confirm"
           type="password"
           value={formsValues.password2}
+          data-testid="password2"
         />
         <button
           className="btn btn-primary btn-block mb-5"
           type="submit"
+          data-testid="btnRegister"
         >
-          Login
+          Register
         </button>
         <Link
           className="link"

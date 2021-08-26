@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <NoteScreen/> Debe mostrarse correctamente 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="notes__main-content animate__animated animate__fadeIn animated__fater"
+      >
+        <div
+          class="notes__appbar"
+        >
+          <span>
+            28 de Agosto 2021
+          </span>
+          <input
+            id="fileSelector"
+            name="fileSelector"
+            style="display: none;"
+            type="file"
+          />
+          <div>
+            <button
+              class="btn"
+            >
+              Picture
+            </button>
+            <button
+              class="btn"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+        <div
+          class="notes__content"
+        >
+          <input
+            class="notes__title-input"
+            data-testid="title"
+            id=""
+            name="title"
+            placeholder="Some awesome title"
+            type="text"
+            value="Hola"
+          />
+          <textarea
+            class="notes__textarea"
+            cols="30"
+            data-testid="body"
+            id=""
+            name="body"
+            placeholder="what happened today"
+            rows="10"
+          >
+            mundo
+          </textarea>
+        </div>
+        <button
+          class="btn btn-danger"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="notes__main-content animate__animated animate__fadeIn animated__fater"
+    >
+      <div
+        class="notes__appbar"
+      >
+        <span>
+          28 de Agosto 2021
+        </span>
+        <input
+          id="fileSelector"
+          name="fileSelector"
+          style="display: none;"
+          type="file"
+        />
+        <div>
+          <button
+            class="btn"
+          >
+            Picture
+          </button>
+          <button
+            class="btn"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+      <div
+        class="notes__content"
+      >
+        <input
+          class="notes__title-input"
+          data-testid="title"
+          id=""
+          name="title"
+          placeholder="Some awesome title"
+          type="text"
+          value="Hola"
+        />
+        <textarea
+          class="notes__textarea"
+          cols="30"
+          data-testid="body"
+          id=""
+          name="body"
+          placeholder="what happened today"
+          rows="10"
+        >
+          mundo
+        </textarea>
+      </div>
+      <button
+        class="btn btn-danger"
+      >
+        Delete
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

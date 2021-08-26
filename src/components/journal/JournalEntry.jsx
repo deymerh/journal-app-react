@@ -11,7 +11,8 @@ export const JournalEntry = ({id, date, title, body, url}) => {
   };
   return (
     <div className="journal__entry animate__animated animate__fadeIn animated__fater"
-      onClick={handleActivatedNote}      
+      onClick={handleActivatedNote}
+      data-testid="selectNote"    
     >
       {
         (url)&&  

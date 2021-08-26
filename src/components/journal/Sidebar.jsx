@@ -22,13 +22,15 @@ export const Sidebar = () => {
         </h3>
         <button
           className="btn"
-          onClick={handleLogout} 
+          onClick={handleLogout}
+          data-testid="btnLogout"
           >
           Logout
         </button>
       </div>
       <div className="jounal__new-entry">
         <i className="far fa-calendar-plus fa-5x"
+          data-testid="newEntry"
           onClick={handleAddNew}
         ></i>
         <p className="mt-5">New Entry</p>

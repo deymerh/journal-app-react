@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruabas en el <JournalEntry /> Renderizarse correctamente - \`[snapshot]\` 1`] = `
+<div>
+  <div
+    class="journal__entry animate__animated animate__fadeIn animated__fater"
+    data-testid="selectNote"
+  >
+    <img
+      alt="note"
+      class="journal__entry-picture"
+      src="https://www.deymerh.co.mifoto.jpg"
+      style="background-size: cover;"
+    />
+    <div
+      class="jornal__entry-body"
+    >
+      <p
+        class="jornal__entry-title"
+      >
+        Hola
+      </p>
+      <p
+        class="jornal__entry-content"
+      >
+        mundo
+      </p>
+    </div>
+    <div
+      class="journal__entry-date-box"
+    >
+      <span>
+        Wednesday
+      </span>
+      <h4>
+        31st
+      </h4>
+    </div>
+  </div>
+</div>
+`;

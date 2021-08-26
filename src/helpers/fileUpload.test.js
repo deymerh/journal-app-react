@@ -9,7 +9,7 @@ cloudinary.config({
 });
 
 describe('Pruebas en la funcion `fileUpload`', () => {
-
+  jest.setTimeout(9000);
   test('Debe retornar la url de la imagen subida a cloudynary', async (done) => {
     const res = await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMXJI6FO_B8cPWhXvQvpcOLtfriRoepN8FA&usqp=CAU');
     const blob = await res.blob();
